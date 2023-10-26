@@ -1,18 +1,18 @@
 const addBtn = document.getElementById("addNote");
 const notesContainer = document.getElementById("notesContainer");
+const noNotesImg = document.querySelector(".no-notes-img");
 
-let id = 0;
-
-const updateLSData = (id) => {
+const updateLSData = () => {
     const allNotes = document.querySelectorAll(".note");
     let notes = [];
     let ele = {};
 
     allNotes.forEach((note) => {
-        ele.id = id;
         ele.content = note.querySelector(".noteContent").value;
         ele.title = note.querySelector(".inputHeading").value;
-        notes.push(ele);
+        if (!(ele.content === "" && ele.title === "" || ele.content === " " && ele.title === " ")) {
+            notes.push(ele);
+        }
         ele = {};
     })
 
@@ -20,11 +20,9 @@ const updateLSData = (id) => {
 }
 
 const addNewNote = (text = '', title = '') => {
+    noNotesImg.classList.add('d-none');
     const newNote = document.createElement('div');
     newNote.classList.add('note');
-
-    id++;
-    newNote.setAttribute("key", id);
 
     const htmlData = `
     <div class="titleBar">
@@ -76,31 +74,42 @@ const addNewNote = (text = '', title = '') => {
             inputHeading.value = " ";
             inputHeading.style.borderColor = "transparent";
         }
-        updateLSData(id);
+        updateLSData();
     })
 
     inputHeading.addEventListener("change", (event) => {
-        updateLSData(id);
+        updateLSData();
     })
 
     const deleteNote = () => {
         newNote.remove();
-        updateLSData(id);
+        updateLSData();
     }
 
     deleteBtn.addEventListener("click", deleteNote);
     notesContainer.append(newNote);
 
 }
+const getData = () => {
+    if (localStorage.getItem("data")) {
+        const data = JSON.parse(localStorage.getItem("data"));
+        console.log(data);
+        if (data === undefined || data.length == 0) {
+            console.log("no data found")
+            noNotesImg.classList.add('d-inline');
+        }
+        else {
+            noNotesImg.classList.add('d-none');
 
-if (localStorage.getItem("data")) {
-    const data = JSON.parse(localStorage.getItem("data"));
-    console.log("data:", data);
-
-    data.forEach((ele) => {
-        id = Math.max(id, ele.id);
-        addNewNote(ele.content, ele.title);
-    })
+            data.forEach((ele) => {
+                addNewNote(ele.content, ele.title);
+            })
+        }
+    }
+    else {
+        localStorage.setItem("data", undefined);
+    }
 }
+getData();
 
 addBtn.addEventListener("click", () => addNewNote());
