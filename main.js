@@ -17,6 +17,14 @@ const updateLSData = () => {
     })
 
     localStorage.setItem("data", JSON.stringify(notes));
+    if (notes.length == 0) {
+        noNotesImg.classList.remove('d-none');
+        noNotesImg.classList.add('d-inline');
+    }
+    else {
+        noNotesImg.classList.remove('d-inline');
+        noNotesImg.classList.add('d-none');
+    }
 }
 
 const addNewNote = (text = '', title = '') => {
