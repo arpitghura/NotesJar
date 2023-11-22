@@ -8,3 +8,5 @@ Looking for a simple and smart way to take notes online? Check out Notes Jar, th
     - `<your_username>` should be replaced by your GitHub username
 - Congratulations. You have installed the project locally. Now, use the project and understand the code flow.
 
+# Join Discord Server
+For communications, Join our discord server named TechPulse. [Click here to Join discord server](https://discord.gg/MwuJnFxNzV)
