@@ -1,5 +1,4 @@
-* {
-  margin: 0;
+*{  margin: 0;
   padding: 0;
 }
 
@@ -25,19 +24,33 @@ body {
 
 
 .heading {
-  padding: 10px;
+  padding: 5px;
   top: 0;
   position: sticky;
-  background: rgb(251, 216, 98);
-  background: linear-gradient(90deg, rgba(251, 216, 98, 1) 35%, rgba(79, 158, 123, 1) 100%);
+  background: rgb(241, 241, 187);
+  background: linear-gradient(90deg, rgb(2, 0, 119), rgb(230, 186, 227));
 }
 
+
+/* Change the button color on hover */
 .learn-more {
   /* border: 2px solid rgb(251,216,98); */
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 5px 15px;
-  font-size: 1.2rem;
+  margin-top: 5px;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: rgb(64, 64, 240);
 }
+
+.btn-success:hover {
+  background-color: rgb(1, 17, 166); /* New color on hover */
+}
+.logo{
+  margin-left:40px ;
+}
+
 
 .heading h1 {
   font-size: x-large;
@@ -88,7 +101,7 @@ body {
 }
 
 .operations #editBtn {
-  background-color: rgb(42, 173, 2);
+  background-color: rgb(2, 25, 173);
 }
 
 .operations #deleteBtn {
@@ -96,8 +109,8 @@ body {
 }
 
 .operations #editBtn:hover {
-  color: rgb(42, 173, 2);
-  background-color: rgb(245, 244, 244);
+  color: rgb(2, 25, 173);
+  background-color:  rgb(2, 25, 173);
 }
 
 .operations #deleteBtn:hover {
