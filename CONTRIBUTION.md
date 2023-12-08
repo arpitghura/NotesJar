@@ -19,13 +19,15 @@
 1. Fork the repository.
 2. Clone the forked repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/[project-name].git 
+    git clone https://github.com/your-username/NotesJar.git 
     ```
 3. Create a new branch for your feature or bug fix:
     ```bash
     git checkout -b feature-name
     ```
 4. Make your changes and commit them with a clear and concise message:
+    how to write a better git commit them with a clear and concise message:
+    <a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/">FreeCodeCamp</a>
     ```bash
     git add .
     git commit -m "Your clear and concise message"
@@ -34,7 +36,16 @@
     ```bash
     git push origin feature-name
     ```
-6. Open a pull request, referencing any relevant issues.
+6. Open a pull request, referencing relevant issues.
+
+    The PR should contain about:
+
+    1. the problem or issue tag
+    2. the solution approach you have made
+    3. any big file changes
+    4. any bug/issue that can arise from the changes.
+
+
 
 ## Code Style
 
@@ -74,4 +85,4 @@ By contributing to this project, you agree that your contributions will be licen
 
 ---
 
-Thank you for contributing to [Project Name]! 🚀
+Thank you for contributing to NotesJar! 🚀
