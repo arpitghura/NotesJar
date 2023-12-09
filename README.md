@@ -1,10 +1,10 @@
 # Notes Jar - Your Ultimate Note-Taking Companion
 <div allign="center">
 [![GitHub Issues](https://img.shields.io/github/issues/arpitghura/NotesJar?color=blue&logo=github)](https://github.com/arpitghura/NotesJar/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/arpitghura/NotesJar?style=for-the-badge&color=pink&logo=github)](https://github.com/arpitghura/NotesJar/pulls)          
-![GitHub forks](https://img.shields.io/github/forks/arpitghura/NotesJar?color=2b9348&logo=git)
-[![Contributors](https://img.shields.io/github/contributors/arpitghura/NotesJar?color=2b9348)](https://github.com/arpitghura/NotesJar/contributors")
-[![Access Here](https://img.shields.io/badge/Access-Here-yellow?style=?style=for-the-badge)](https://notes-jar.arpitg.tech/)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/arpitghura/NotesJar?style=for-the-badge&color=pink&logo=github)](https://github.com/arpitghura/NotesJar/pulls)
+![GitHub Forks](https://img.shields.io/github/forks/arpitghura/NotesJar?color=2b9348&logo=git)
+[![Contributors](https://img.shields.io/github/contributors/arpitghura/NotesJar?color=2b9348)](https://github.com/arpitghura/NotesJar/contributors)
+[![Access Here](https://img.shields.io/badge/Access-Here-yellow?style=for-the-badge)](https://notes-jar.arpitg.tech/)
 </div>
 
 Introducing Notes Jar, your new note-taking companion! Looking for a simple and smart way to take notes online? Check out Notes Jar, the app that captures your thoughts instantly and securely. With Notes Jar, you can access your notes anytime, anywhere. Try it today and see why Notes Jar is the ultimate note-taking companion!
