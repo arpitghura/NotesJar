@@ -47,25 +47,25 @@ Welcome to Notes Jar! Follow these simple steps to make the most out of your not
 
 When you access Notes Jar, you'll land on a clean and intuitive homepage. Here's what it looks like:
 
-![Landing Page](./screenshots/NotesJar-1.jpg)
+![Landing Page](./screenshots/NotesJar-img1.jpg)
 
 ### 2. Creating a New Note
 
 To create a new note, click on the "Add a Note" button. You'll be prompted to give your note a title and start typing your content:
 
-![New Note](./screenshots/NotesJar-2.jpg)
+![New Note](./screenshots/NotesJar-img2.jpg)
 
 ### 3. Viewing and Editing Notes
 
 Your created notes will be shown on the main dashboard. Click on a note to view or edit its content:
 
-![View and Edit Notes](./screenshots/NotesJar-3.jpg)
+![View and Edit Notes](./screenshots/NotesJar-img3.jpg)
 
 ### 4. Manage Your Notes
 
 Just click on delete icon to delete notes. It's easy to keep everything tidy:
 
-![Manage Notes](./screenshots/NotesJar-4.jpg)
+![Manage Notes](./screenshots/NotesJar-img4.jpg)
 
 ## Author Details
 
