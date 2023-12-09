@@ -5,7 +5,6 @@
 ![GitHub forks](https://img.shields.io/github/forks/arpitghura/NotesJar?color=2b9348&logo=git)
 [![Contributors](https://img.shields.io/github/contributors/arpitghura/NotesJar?color=2b9348)](https://github.com/arpitghura/NotesJar/contributors")
 [![Access Here](https://img.shields.io/badge/Access-Here-yellow?style=?style=for-the-badge)](https://notes-jar.arpitg.tech/)
-[![License Badge](https://img.shields.io/github/license/arpitghura/hacktoberfest?color=2b9348)](https://github.com/arpitghura/typing-test/blob/main/LICENSE)
 </div>
 
 Introducing Notes Jar, your new note-taking companion! Looking for a simple and smart way to take notes online? Check out Notes Jar, the app that captures your thoughts instantly and securely. With Notes Jar, you can access your notes anytime, anywhere. Try it today and see why Notes Jar is the ultimate note-taking companion!
