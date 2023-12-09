@@ -68,7 +68,9 @@ Just click on delete icon to delete notes. It's easy to keep everything tidy:
 ## Author Details
 
 Name: Arpit Ghura
+
 Email: ghurarpit110@gmail.com
+
 GitHub: arpitghura
 
 # Join Discord Server
