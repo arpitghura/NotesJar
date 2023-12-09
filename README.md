@@ -2,7 +2,7 @@
 <div allign="center">
     
 [![GitHub Issues](https://img.shields.io/github/issues/arpitghura/NotesJar?color=blue&logo=github)](https://github.com/arpitghura/NotesJar/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/arpitghura/NotesJar?style=for-the-badge&color=pink&logo=github)](https://github.com/arpitghura/NotesJar/pulls)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/arpitghura/NotesJar?style=social&logo=github)](https://github.com/arpitghura/NotesJar/pulls)
 ![GitHub Forks](https://img.shields.io/github/forks/arpitghura/NotesJar?color=2b9348&logo=git)
 [![Contributors](https://img.shields.io/github/contributors/arpitghura/NotesJar?color=2b9348)](https://github.com/arpitghura/NotesJar/contributors)
 [![Access Here](https://img.shields.io/badge/Access-Here-yellow?style=for-the-badge)](https://notes-jar.arpitg.tech/)
