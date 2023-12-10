@@ -1,6 +1,7 @@
 <p align="center">
-img src="https://github.com/arpitghura/NotesJar/assets/134639939/1d36db5b-bbde-4c4a-a72a-887fa0baf017" alt="it's me" width="300"
+<img src="https://github.com/arpitghura/NotesJar/assets/134639939/1d36db5b-bbde-4c4a-a72a-887fa0baf017" alt="App logo" width="300">
 </p>
+
 # Notes Jar - Your Ultimate Note-Taking Companion
 <div align="center">
     
