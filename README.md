@@ -25,7 +25,7 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 ## Project Domain: Web
 ## Tech Stack :
 1.HTML5 <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="100" height="150">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="100" height="180">
 </div>
 
 2. CSS3 <div style="display: inline-block; text-align: center;">
@@ -33,7 +33,7 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 </div> 
 
 3. JavaScript <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="120" height="150">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="120" height="130">
 </div> 
 
 # Installation Guide
