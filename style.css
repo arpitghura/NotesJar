@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(228, 228, 228);
+  background-color: rgba(13, 112, 71, 0.934);
 }
 
 ::-webkit-scrollbar {
@@ -13,7 +13,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ecebeb;
+  background: pink;
   border-radius: 50px;
 }
 
@@ -28,8 +28,8 @@ body {
   padding: 10px;
   top: 0;
   position: sticky;
-  background: rgb(251, 216, 98);
-  background: linear-gradient(90deg, rgba(251, 216, 98, 1) 35%, rgba(79, 158, 123, 1) 100%);
+  background: rgb(157, 98, 251);
+  background: linear-gradient(90deg, rgb(108, 98, 251) 35%, rgba(79, 158, 123, 1) 100%);
 }
 
 .learn-more {
@@ -49,7 +49,7 @@ body {
   min-height: max-content;
   padding: 0;
   margin: 5px;
-  background: white;
+  background: rgb(18, 77, 95);
   height: 25vh;
   width: 22vw;
 }
@@ -67,7 +67,7 @@ body {
   padding: 2px 5px;
   width: 100%;
   background-color: transparent;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(156, 26, 26);
   font-weight: bold;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .operations .btn {
-  color: white;
+  color: pink;
   border-radius: 50%;
   border: none;
   font-size: 0.7em;
@@ -97,12 +97,12 @@ body {
 
 .operations #editBtn:hover {
   color: rgb(42, 173, 2);
-  background-color: rgb(245, 244, 244);
+  background-color: rgb(213, 169, 24);
 }
 
 .operations #deleteBtn:hover {
   color: rgb(197, 29, 29);
-  background-color: rgb(245, 244, 244);
+  background-color: rgb(49, 185, 185);
 }
 
 #notesContainer {
@@ -114,7 +114,7 @@ body {
 
 textarea.noteContent {
   border: none;
-  background-color: transparent;
+  background-color: burlywood;
   resize: none;
   outline: none;
   width: 97%;
