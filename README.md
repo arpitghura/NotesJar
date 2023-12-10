@@ -33,7 +33,7 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 </div> 
 
 3. JavaScript <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="100" height="150">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="120" height="150">
 </div> 
 
 # Installation Guide
@@ -53,25 +53,25 @@ Welcome to Notes Jar! Follow these simple steps to make the most out of your not
 
 When you access Notes Jar, you'll land on a clean and intuitive homepage. Here's what it looks like:
 
-![Landing Page](./screenshots/NotesJar-img1.jpg)
+![Landing Page](https://github.com/arpitghura/NotesJar/assets/134639939/8ccf86cf-5d95-4fb4-a39f-b609ff0b3e72)
 
 ### 2. Creating a New Note
 
 To create a new note, click on the "Add a Note" button. You'll be prompted to give your note a title and start typing your content:
 
-![New Note](./screenshots/NotesJar-img2.jpg)
+![New Note](https://github.com/arpitghura/NotesJar/assets/134639939/c5d5d67d-1de3-45f1-a46c-dd7c5f740151)
 
 ### 3. Viewing and Editing Notes
 
 Your created notes will be shown on the main dashboard. Click on a note to view or edit its content:
 
-![View and Edit Notes](./screenshots/NotesJar-img3.jpg)
+![View and Edit Notes](https://github.com/arpitghura/NotesJar/assets/134639939/55e993f0-84e7-4dda-8340-fa5bf44e6f3c)
 
 ### 4. Manage Your Notes
 
 Just click on delete icon to delete notes. It's easy to keep everything tidy:
 
-![Manage Notes](./screenshots/NotesJar-img4.jpg)
+![Manage Notes](https://github.com/arpitghura/NotesJar/assets/134639939/0e2f17b1-567f-4974-ab07-337572583d60)
 
 ## Author Details
 
