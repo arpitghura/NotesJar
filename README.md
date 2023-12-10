@@ -24,11 +24,11 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 
 ## Project Domain: Web
 ## Tech Stack :
-1. HTML5
+1. HTML5 <img src="./screenshots/css logo.png" alt="HTML Logo" width="50" height="50">
 
-2. CSS3
+2. CSS3 <img src="./screenshots/css logo.png" alt="CSS Logo" width="50" height="50">
 
-3. JavaScript
+3. JavaScript <img src="./screenshots/js logo.png" alt="JS Logo" width="50" height="50">
 
 # Installation Guide
 - To get started with NotesJar, follow these simple steps:
