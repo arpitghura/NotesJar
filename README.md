@@ -1,3 +1,6 @@
+<p align="center">
+img src="https://github.com/arpitghura/NotesJar/assets/134639939/1d36db5b-bbde-4c4a-a72a-887fa0baf017" alt="it's me" width="300"
+</p>
 # Notes Jar - Your Ultimate Note-Taking Companion
 <div align="center">
     
@@ -25,15 +28,15 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 ## Project Domain: Web
 ## Tech Stack :
 1.HTML5 <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="100" height="180">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="100" >
 </div>
 
 2. CSS3 <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/2a221918-580a-4111-944f-e0e10ce13b78" alt="CSS Logo" width="100" height="150">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/2a221918-580a-4111-944f-e0e10ce13b78" alt="CSS Logo" width="100">
 </div> 
 
 3. JavaScript <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="120" height="130">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="100" >
 </div> 
 
 # Installation Guide
