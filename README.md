@@ -1,5 +1,5 @@
 # Notes Jar - Your Ultimate Note-Taking Companion
-<div allign="center">
+<div align="center">
     
 [![GitHub Issues](https://img.shields.io/github/issues/arpitghura/NotesJar?color=blue&logo=github)](https://github.com/arpitghura/NotesJar/issues)
 [![GitHub PRs](https://img.shields.io/github/issues-pr/arpitghura/NotesJar?style=social&logo=github)](https://github.com/arpitghura/NotesJar/pulls)
