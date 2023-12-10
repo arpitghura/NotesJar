@@ -25,12 +25,16 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 ## Project Domain: Web
 ## Tech Stack :
 1.HTML5 <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="50" height="50">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="100" height="150">
 </div>
 
-2. CSS3 <img src="./screenshots/css logo.png" alt="CSS Logo" width="50" height="50">
+2. CSS3 <div style="display: inline-block; text-align: center;">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/2a221918-580a-4111-944f-e0e10ce13b78" alt="CSS Logo" width="100" height="150">
+</div> 
 
-3. JavaScript <img src="./screenshots/js logo.png" alt="JS Logo" width="50" height="50">
+3. JavaScript <div style="display: inline-block; text-align: center;">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="100" height="150">
+</div> 
 
 # Installation Guide
 - To get started with NotesJar, follow these simple steps:
