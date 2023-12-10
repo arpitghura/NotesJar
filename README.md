@@ -24,7 +24,8 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 
 ## Project Domain: Web
 ## Tech Stack :
-1. HTML5 ![html logo](https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad)
+1. HTML5 <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="50" height="50">
+
 
 2. CSS3 <img src="./screenshots/css logo.png" alt="CSS Logo" width="50" height="50">
 
