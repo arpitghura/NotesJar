@@ -27,20 +27,20 @@ Explore the power of Notes Jar and elevate your note-taking experience. Try it n
 The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://notes-jar.arpitg.tech/)
 
 ## Project Domain: Web
-## Tech Stack :
+## 🖥 Tech Stack :
 1.HTML5 <div style="display: inline-block; text-align: center;">
   <img src="https://github.com/arpitghura/NotesJar/assets/134639939/8a68689a-9c0c-417f-a8b7-92442a9052ad" alt="HTML Logo" width="100" >
 </div>
 
 2. CSS3 <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/2a221918-580a-4111-944f-e0e10ce13b78" alt="CSS Logo" width="100">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/2a221918-580a-4111-944f-e0e10ce13b78" alt="CSS Logo" width="80">
 </div> 
 
 3. JavaScript <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="100" >
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="130" >
 </div> 
 
-# Installation Guide
+# 👨🏼‍🔧 Installation Guide
 - To get started with NotesJar, follow these simple steps:
 
 - Star and fork Repo
@@ -49,7 +49,7 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
     - `<your_username>` should be replaced by your GitHub username
 - Congratulations. You have installed the project locally. Now, use the project and understand the code flow.
 
-## How to Use Notes Jar
+## 🦾 How to Use Notes Jar
 
 Welcome to Notes Jar! Follow these simple steps to make the most out of your note-taking experience:
 
