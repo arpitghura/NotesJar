@@ -33,11 +33,11 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 </div>
 
 2. CSS3 <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/2a221918-580a-4111-944f-e0e10ce13b78" alt="CSS Logo" width="80">
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/2a221918-580a-4111-944f-e0e10ce13b78" alt="CSS Logo" width="93">
 </div> 
 
 3. JavaScript <div style="display: inline-block; text-align: center;">
-  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="130" >
+  <img src="https://github.com/arpitghura/NotesJar/assets/134639939/3c9ad429-a5a7-4cad-a7b0-90f912d157f8" alt="JS Logo" width="150" >
 </div> 
 
 # 👨🏼‍🔧 Installation Guide
