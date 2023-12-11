@@ -25,7 +25,7 @@ body {
 
 
 .heading {
-  padding: 10px;
+  padding: 6px;
   top: 0;
   position: sticky;
   background: rgb(251, 216, 98);
@@ -35,7 +35,7 @@ body {
 .learn-more {
   /* border: 2px solid rgb(251,216,98); */
   border-radius: 10px;
-  padding: 5px 15px;
+  padding:5px 15px; 
   font-size: 1.2rem;
 }
 
