@@ -16,7 +16,6 @@ body {
   background: #ecebeb;
   border-radius: 50px;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #FBD862;
@@ -136,3 +135,10 @@ textarea.noteContent {
 .catHead {
   text-decoration: underline;
 } */
+
+
+/* animating add a note (srayashsingh)  */
+#addNote:hover{
+  transition: all 0.3s ease 0s;
+  transform: scale(1.05);
+}
