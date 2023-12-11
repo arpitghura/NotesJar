@@ -1,8 +1,7 @@
 const addBtn = document.getElementById("addNote");
 const notesContainer = document.getElementById("notesContainer");
 const noNotesImg = document.querySelector(".no-notes-img");
-var modal = document.getElementById("myModal");
-var msg = document.getElementById("msg");
+
 let currentItemCount=()=>{
     const allNotes = document.querySelectorAll(".note");
     let notes = [];
@@ -20,14 +19,6 @@ let currentItemCount=()=>{
     return notes.length
 }
 
-  
-  // When the user clicks anywhere outside of the message box, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.opacity = 0;
-        modal.style.visibility = 'hidden';
-    }
-  }
 const updateLSData = () => {
     const allNotes = document.querySelectorAll(".note");
     let notes = [];
@@ -101,24 +92,11 @@ const addNewNote = (text = '', title = '') => {
         }else{
             let newC=currentItemCount();
             if(newC>c){
-                modal.style.opacity = 1;
-                modal.style.visibility = 'visible';
-                msg.innerHTML="New Note added!!!"
-                setTimeout(()=>{
-                    modal.style.opacity = 0;
-                    modal.style.visibility = 'hidden';
-                },1300)
-
+                toastMessage("New Note added!!!")
             }
             if(newC==c)
             {
-                modal.style.opacity = 1;
-                modal.style.visibility = 'visible';
-                msg.innerHTML="Note updated successfully!!!"
-                setTimeout(()=>{
-                    modal.style.opacity = 0;
-                    modal.style.visibility = 'hidden';
-                },1300)
+                toastMessage("Note updated successfully!!!")
             }
             c=currentItemCount();
         }
@@ -143,13 +121,10 @@ const addNewNote = (text = '', title = '') => {
         let newC=currentItemCount();
         updateLSData();
         if(newC<c){
-            modal.style.visibility = 'visible';
-            modal.style.opacity = 1;
-            msg.innerHTML="Note deleted successfully!!!"
-            setTimeout(()=>{
-                modal.style.opacity = 0;
-                modal.style.visibility = 'hidden';
-            },1000)
+            toastMessage("Note deleted successfully!!!")
+
+        }else{
+            toastMessage("Note deleted successfully!!!")
         }
         c=currentItemCount()
     }
@@ -180,4 +155,10 @@ const getData = () => {
 }
 getData();
 
+function toastMessage(msg) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    x.innerHTML=msg;
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
 addBtn.addEventListener("click", () => addNewNote());
