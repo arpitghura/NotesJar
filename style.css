@@ -34,9 +34,40 @@ body {
 
 .learn-more {
   /* border: 2px solid rgb(251,216,98); */
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 5px 15px;
   font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  box-shadow: 3px 3px 0 rgb(40, 34, 34);
+  transition: 0.3s all ease;
+}
+.learn-more:focus {
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  box-shadow: 3px 3px 0 rgb(40, 34, 34);
+}
+.learn-more:active{
+  transform: translateY(3px);
+  color: white;
+  background-color: black;
+}
+.learn-more:active:after{
+  color: white;
+  background-color: black;
+}
+.learn-more:hover{
+  color: white;
+  background-color: rgb(0, 0, 0);
+  width: 150px;
+  transition: all 0.3s ease;
+  letter-spacing: 1.2px;
+}
+.learn-more:hover::before{
+  width: 100%;
 }
 
 .heading h1 {
