@@ -19,17 +19,20 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FBD862;
+  background: #fbd862;
   border-radius: 50px;
 }
-
 
 .heading {
   padding: 10px;
   top: 0;
   position: sticky;
   background: rgb(251, 216, 98);
-  background: linear-gradient(90deg, rgba(251, 216, 98, 1) 35%, rgba(79, 158, 123, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 216, 98, 1) 35%,
+    rgba(79, 158, 123, 1) 100%
+  );
 }
 
 .learn-more {
@@ -50,23 +53,23 @@ body {
   background-color: black;
   box-shadow: 3px 3px 0 rgb(40, 34, 34);
 }
-.learn-more:active{
+.learn-more:active {
   transform: translateY(3px);
   color: white;
   background-color: black;
 }
-.learn-more:active:after{
+.learn-more:active:after {
   color: white;
   background-color: black;
 }
-.learn-more:hover{
+.learn-more:hover {
   color: white;
   background-color: rgb(0, 0, 0);
   width: 150px;
   transition: all 0.3s ease;
   letter-spacing: 1.2px;
 }
-.learn-more:hover::before{
+.learn-more:hover::before {
   width: 100%;
 }
 
@@ -115,7 +118,7 @@ body {
   font-size: 0.7em;
   margin-left: 5px;
   /* padding: 5px 10px; */
-  transition: background .1s ease-out;
+  transition: background 0.1s ease-out;
 }
 
 .operations #editBtn {
