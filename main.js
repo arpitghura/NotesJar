@@ -2,7 +2,7 @@ const addBtn = document.getElementById("addNote");
 const notesContainer = document.getElementById("notesContainer");
 const noNotesImg = document.querySelector(".no-notes-img");
 
-const updateLSData = () => {
+let getAllNotes=()=>{
     const allNotes = document.querySelectorAll(".note");
     let notes = [];
     let ele = {};
@@ -15,7 +15,11 @@ const updateLSData = () => {
         }
         ele = {};
     })
+    return notes
+}
 
+const updateLSData = () => {
+    let notes = getAllNotes()
     localStorage.setItem("data", JSON.stringify(notes));
     if (notes.length == 0) {
         noNotesImg.classList.remove('d-none');
@@ -28,10 +32,11 @@ const updateLSData = () => {
 }
 
 const addNewNote = (text = '', title = '') => {
+    var n=getAllNotes();
+    var c=n.length;
     noNotesImg.classList.add('d-none');
     const newNote = document.createElement('div');
     newNote.classList.add('note');
-
     const htmlData = `
     <div class="titleBar">
         <input placeholder="Add title" value="${title}" name="title" class="inputHeading" ${title ? 'readonly' : ''}/>
@@ -56,6 +61,8 @@ const addNewNote = (text = '', title = '') => {
         if (textArea.attributes.readonly) {
             editBtn.children[0].classList.remove("fa-check");
             editBtn.children[0].classList.add("fa-edit");
+            n=getAllNotes();
+            c=n.length;
         }
         else {
             editBtn.children[0].classList.remove("fa-edit");
@@ -72,6 +79,17 @@ const addNewNote = (text = '', title = '') => {
                 inputHeading.value = "";
                 inputHeading.style.borderColor = "black ";
             }
+        }else{
+            let n=getAllNotes();
+            let newC=n.length;
+            if(newC>c){
+                toastMessage("New Note added!!!")
+            }
+            if(newC==c|| (c==0&&newC!=1))
+            {
+                toastMessage("Note updated successfully!!!")
+            }
+            c=getAllNotes().length;
         }
         textArea.focus();
         changeIcon();
@@ -92,6 +110,8 @@ const addNewNote = (text = '', title = '') => {
     const deleteNote = () => {
         newNote.remove();
         updateLSData();
+        c=getAllNotes().length
+        toastMessage("Note deleted successfully!!!")
     }
 
     deleteBtn.addEventListener("click", deleteNote);
@@ -120,4 +140,10 @@ const getData = () => {
 }
 getData();
 
+function toastMessage(msg) {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    x.innerText=msg;
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }
 addBtn.addEventListener("click", () => addNewNote());
