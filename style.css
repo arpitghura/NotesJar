@@ -128,7 +128,7 @@ textarea.noteContent {
 #snackbar {
   visibility: hidden;
   min-width: 250px; 
-  margin-right: -125px;  /* Change margin-left to margin-right */
+  margin-right: -125px;  
   background-color: #333; 
   color: #fff; 
   text-align: center; 

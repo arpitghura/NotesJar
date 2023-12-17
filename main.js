@@ -15,15 +15,11 @@ let getAllNotes=()=>{
         }
         ele = {};
     })
-
     return notes
 }
 
 const updateLSData = () => {
-    // const allNotes = document.querySelectorAll(".note");
     let notes = getAllNotes()
-    // let ele = {};
-
     localStorage.setItem("data", JSON.stringify(notes));
     if (notes.length == 0) {
         noNotesImg.classList.remove('d-none');
@@ -87,7 +83,7 @@ const addNewNote = (text = '', title = '') => {
             let n=getAllNotes();
             let newC=n.length;
             if(newC>c){
-                toastMessage("New Note added!!!"+newC+"  "+c)
+                toastMessage("New Note added!!!")
             }
             if(newC==c|| (c==0&&newC!=1))
             {
@@ -113,10 +109,9 @@ const addNewNote = (text = '', title = '') => {
 
     const deleteNote = () => {
         newNote.remove();
-        // let newC=getAllNotes().length;
         updateLSData();
         c=getAllNotes().length
-        toastMessage("Note deleted successfully!!!"+c)
+        toastMessage("Note deleted successfully!!!")
     }
 
     deleteBtn.addEventListener("click", deleteNote);
