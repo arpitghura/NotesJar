@@ -2,7 +2,7 @@ const addBtn = document.getElementById("addNote");
 const notesContainer = document.getElementById("notesContainer");
 const noNotesImg = document.querySelector(".no-notes-img");
 
-let currentItemCount=()=>{
+let getAllNotes=()=>{
     const allNotes = document.querySelectorAll(".note");
     let notes = [];
     let ele = {};
@@ -16,22 +16,13 @@ let currentItemCount=()=>{
         ele = {};
     })
 
-    return notes.length
+    return notes
 }
 
 const updateLSData = () => {
-    const allNotes = document.querySelectorAll(".note");
-    let notes = [];
-    let ele = {};
-
-    allNotes.forEach((note) => {
-        ele.content = note.querySelector(".noteContent").value;
-        ele.title = note.querySelector(".inputHeading").value;
-        if (!(ele.content === "" && ele.title === "" || ele.content === " " && ele.title === " ")) {
-            notes.push(ele);
-        }
-        ele = {};
-    })
+    // const allNotes = document.querySelectorAll(".note");
+    let notes = getAllNotes()
+    // let ele = {};
 
     localStorage.setItem("data", JSON.stringify(notes));
     if (notes.length == 0) {
@@ -45,10 +36,11 @@ const updateLSData = () => {
 }
 
 const addNewNote = (text = '', title = '') => {
+    var n=getAllNotes();
+    var c=n.length;
     noNotesImg.classList.add('d-none');
     const newNote = document.createElement('div');
     newNote.classList.add('note');
-    let c=currentItemCount();
     const htmlData = `
     <div class="titleBar">
         <input placeholder="Add title" value="${title}" name="title" class="inputHeading" ${title ? 'readonly' : ''}/>
@@ -73,6 +65,8 @@ const addNewNote = (text = '', title = '') => {
         if (textArea.attributes.readonly) {
             editBtn.children[0].classList.remove("fa-check");
             editBtn.children[0].classList.add("fa-edit");
+            n=getAllNotes();
+            c=n.length;
         }
         else {
             editBtn.children[0].classList.remove("fa-edit");
@@ -90,15 +84,16 @@ const addNewNote = (text = '', title = '') => {
                 inputHeading.style.borderColor = "black ";
             }
         }else{
-            let newC=currentItemCount();
+            let n=getAllNotes();
+            let newC=n.length;
             if(newC>c){
-                toastMessage("New Note added!!!")
+                toastMessage("New Note added!!!"+newC+"  "+c)
             }
-            if(newC==c)
+            if(newC==c|| (c==0&&newC!=1))
             {
                 toastMessage("Note updated successfully!!!")
             }
-            c=currentItemCount();
+            c=getAllNotes().length;
         }
         textArea.focus();
         changeIcon();
@@ -118,15 +113,10 @@ const addNewNote = (text = '', title = '') => {
 
     const deleteNote = () => {
         newNote.remove();
-        let newC=currentItemCount();
+        // let newC=getAllNotes().length;
         updateLSData();
-        if(newC<c){
-            toastMessage("Note deleted successfully!!!")
-
-        }else{
-            toastMessage("Note deleted successfully!!!")
-        }
-        c=currentItemCount()
+        c=getAllNotes().length
+        toastMessage("Note deleted successfully!!!"+c)
     }
 
     deleteBtn.addEventListener("click", deleteNote);
@@ -158,7 +148,7 @@ getData();
 function toastMessage(msg) {
     var x = document.getElementById("snackbar");
     x.className = "show";
-    x.innerHTML=msg;
+    x.innerText=msg;
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
   }
 addBtn.addEventListener("click", () => addNewNote());
