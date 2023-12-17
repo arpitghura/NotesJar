@@ -30,8 +30,19 @@ body {
   position: sticky;
   background: rgb(251, 216, 98);
   background: linear-gradient(90deg, rgb(251, 216, 98) 35%, rgb(0, 76, 209) 100%);
+  
 }
-
+@media (max-width:380px) {
+  .btn{
+    padding :0px;
+    margin:0px;
+    width: 80px;
+    font-weight: 800;
+  }
+  .logo{
+    width: 3px;
+  }
+}
 .learn-more {
   /* border: 2px solid rgb(251,216,98); */
   border-radius: 10px;
