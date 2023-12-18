@@ -3,6 +3,127 @@
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(228, 228, 228);
+}
+
 ::-webkit-scrollbar {
-  display: none;
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ecebeb;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FBD862;
+  border-radius: 50px;
+}
+
+
+.heading {
+  padding: 10px;
+  top: 0;
+  position: sticky;
+  background: rgb(251, 216, 98);
+  background: linear-gradient(90deg, rgba(251, 216, 98, 1) 35%, rgba(79, 158, 123, 1) 100%);
+}
+
+.learn-more {
+  /* border: 2px solid rgb(251,216,98); */
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+}
+
+.heading h1 {
+  font-size: x-large;
+}
+
+.note {
+  border-radius: 10px;
+  min-width: 200px;
+  min-height: max-content;
+  padding: 0;
+  margin: 5px;
+  background: white;
+  height: 25vh;
+  width: 22vw;
+}
+
+.titleBar {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 5px;
+}
+
+.inputHeading {
+  border: none;
+  outline: none;
+  padding: 2px 5px;
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+.operations {
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 10px; */
+}
+
+.operations .btn {
+  color: white;
+  border-radius: 50%;
+  border: none;
+  font-size: 0.7em;
+  margin-left: 5px;
+  /* padding: 5px 10px; */
+  transition: background .1s ease-out;
+}
+
+.operations #editBtn {
+  background-color: rgb(42, 173, 2);
+}
+
+.operations #deleteBtn {
+  background-color: rgb(197, 29, 29);
+}
+
+.operations #editBtn:hover {
+  color: rgb(42, 173, 2);
+  background-color: rgb(245, 244, 244);
+}
+
+.operations #deleteBtn:hover {
+  color: rgb(197, 29, 29);
+  background-color: rgb(245, 244, 244);
+}
+
+#notesContainer {
+  width: 100vw;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+textarea.noteContent {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  width: 97%;
+  height: 75%;
+  margin: 0 5px;
+  padding: 5px 0;
 }
