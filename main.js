@@ -1,123 +1,52 @@
-const addBtn = document.getElementById("addNote");
-const notesContainer = document.getElementById("notesContainer");
-const noNotesImg = document.querySelector(".no-notes-img");
+const dueDateInput = document.getElementById("dueDate");
+const submitBtn = document.getElementById("submitBtn");
+const tasksHeading = document.getElementById("heading-tasks");
+submitBtn.addEventListener("click", (e) => {
+  addItem(e);
+});
 
-const updateLSData = () => {
-    const allNotes = document.querySelectorAll(".note");
-    let notes = [];
-    let ele = {};
+flatpickr(dueDateInput, {
+  enableTime: false,
+  dateFormat: "Y-m-d",
+});
 
-    allNotes.forEach((note) => {
-        ele.content = note.querySelector(".noteContent").value;
-        ele.title = note.querySelector(".inputHeading").value;
-        if (!(ele.content === "" && ele.title === "" || ele.content === " " && ele.title === " ")) {
-            notes.push(ele);
-        }
-        ele = {};
-    })
+function addItem(e) {
+  e.preventDefault();
+  const newTaskTitle = document.getElementById("item").value;
+  let dueDate = document.getElementById("dueDate").value;
+  const currentDate = new Date();
+  const dueDateObj = new Date(dueDate);
+  if (!newTaskTitle) {
+    return false;
+  } else if (dueDateObj < currentDate) {
+    return false;
+  } else {
+    tasksHeading.classList.remove("hidden");
+  }
 
-    localStorage.setItem("data", JSON.stringify(notes));
-    if (notes.length == 0) {
-        noNotesImg.classList.remove('d-none');
-        noNotesImg.classList.add('d-inline');
-    }
-    else {
-        noNotesImg.classList.remove('d-inline');
-        noNotesImg.classList.add('d-none');
-    }
+  if (newTaskTitle.trim() === "") return false;
+  else {
+    document.getElementById("item").value = "";
+  }
+
+  const creationDateTime = new Date().toLocaleString();
+
+  createNewTask(newTaskTitle, creationDateTime, dueDate);
+
+  document.getElementById("dueDate").value = "";
 }
 
-const addNewNote = (text = '', title = '') => {
-    noNotesImg.classList.add('d-none');
-    const newNote = document.createElement('div');
-    newNote.classList.add('note');
+function createNewTask(taskTitle, createdDate, dueDate) {
+  const li = document.createElement("li");
+  li.className = `list-group-item card bg-transparent rounded my-2 shadow`;
+  const dateTimeParagraph = document.createElement("p");
+  dateTimeParagraph.className = "text-muted";
+  dateTimeParagraph.style.fontSize = "15px";
+  dateTimeParagraph.appendChild(
+    document.createTextNode("Created:" + createdDate)
+  );
+  li.appendChild(document.createTextNode(taskTitle));
+  li.appendChild(dateTimeParagraph);
 
-    const htmlData = `
-    <div class="titleBar">
-        <input placeholder="Add title" value="${title}" name="title" class="inputHeading" ${title ? 'readonly' : ''}/>
-        <div class="operations">
-            <button class="btn btn-sm card-btn" id="editBtn"><i class="fa fa-edit"></i></button>
-            <button class="btn btn-sm card-btn" id="deleteBtn"><i class="fa fa-trash"></i></button>
-        </div>
-    </div>
-    <textarea class="noteContent" ${text ? 'readonly' : ''} placeholder="Write Note here..."></textarea>`;
-
-    newNote.insertAdjacentHTML("afterbegin", htmlData);
-
-    const editBtn = newNote.querySelector("#editBtn");
-    const deleteBtn = newNote.querySelector("#deleteBtn");
-    const textArea = newNote.querySelector(".noteContent");
-    const inputHeading = newNote.querySelector(".inputHeading");
-
-    textArea.value = text;
-    inputHeading.value = title;
-
-    const changeIcon = () => {
-        if (textArea.attributes.readonly) {
-            editBtn.children[0].classList.remove("fa-check");
-            editBtn.children[0].classList.add("fa-edit");
-        }
-        else {
-            editBtn.children[0].classList.remove("fa-edit");
-            editBtn.children[0].classList.add("fa-check");
-        }
-    }
-    changeIcon();
-
-    editBtn.addEventListener("click", () => {
-        textArea.toggleAttribute("readonly");
-        inputHeading.toggleAttribute("readonly");
-        if (!textArea.attributes.readonly) {
-            if (inputHeading.value === " ") {
-                inputHeading.value = "";
-                inputHeading.style.borderColor = "black ";
-            }
-        }
-        textArea.focus();
-        changeIcon();
-    })
-
-    textArea.addEventListener("change", (event) => {
-        if (inputHeading.value === "") {
-            inputHeading.value = " ";
-            inputHeading.style.borderColor = "transparent";
-        }
-        updateLSData();
-    })
-
-    inputHeading.addEventListener("change", (event) => {
-        updateLSData();
-    })
-
-    const deleteNote = () => {
-        newNote.remove();
-        updateLSData();
-    }
-
-    deleteBtn.addEventListener("click", deleteNote);
-    notesContainer.append(newNote);
-
+  taskList.appendChild(li);
 }
-const getData = () => {
-    if (localStorage.getItem("data")) {
-        const data = JSON.parse(localStorage.getItem("data"));
-        console.log(data);
-        if (data === undefined || data.length == 0) {
-            console.log("no data found")
-            noNotesImg.classList.add('d-inline');
-        }
-        else {
-            noNotesImg.classList.add('d-none');
-
-            data.forEach((ele) => {
-                addNewNote(ele.content, ele.title);
-            })
-        }
-    }
-    else {
-        localStorage.setItem("data", undefined);
-    }
-}
-getData();
-
-addBtn.addEventListener("click", () => addNewNote());
