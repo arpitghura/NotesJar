@@ -167,3 +167,16 @@ textarea.noteContent {
   from {top: 30px; opacity: 1;} 
   to {top: 0; opacity: 0;}
 }
+
+.btn{
+  background-color: rgb(71, 189, 71);
+  text-transform: uppercase;
+  font: 200;
+  color: rgb(224, 209, 209);
+}
+
+.btn:hover{
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+  transform: scale(1.05);
+}
