@@ -1,5 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta
+         name="keywords"
+         content="Notes Jar, note-taking app, notepad app, sticky notes app, digital notebook app, to-do list app, task tracker app, list maker app, thought organizer app, brain dump app, memory bank app, note taking app for students, note taking app for business, note taking app for personal use, note taking app for teams, free note taking app, easy-to-use note taking app, powerful note taking app, secure note taking app, note taking app with tags, note taking app with search, note taking app with offline access, note taking app with open code, open source notes taking app"
+         />
+      <meta
+         name="description"
+         content="Introducing Notes Jar, your new note-taking companion! Capture your thoughts instantly and access them anytime with our secure local storage feature. Ideal for students and professionals, Notes Jar makes note-taking simple and efficient."
+         />
+      <meta name="author" content="Arpit Ghura" />
+      <meta
+         property="og:image"
+         content="https://d33wubrfki0l68.cloudfront.net/5fbc10f514319a00073fcbfb/screenshot.png"
+         />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1024" />
+      <meta property="og:image:height" content="1024" />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.notes-jar.netlify.app" />
+      <meta
+         property="og:title"
+         content="Notes Jar: Note It Down, We'll Remember!"
+         />
+      <meta
+         property="og:description"
+         content="Looking for a simple and smart way to take notes online? Check out Notes Jar, the app that captures your thoughts instantly and securely. With Notes Jar, you can access your notes anytime, anywhere. Try it today and see why Notes Jar is the ultimate note-taking companion!"
+         />
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+         crossorigin="anonymous"
+         />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+         />
+      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <link rel="stylesheet" href="style.css" />
+      <title>Notes Jar: Note It Down, We'll Remember!</title>
+   </head>
+   <body>
+      <header>
+         <div class="heading d-flex flex-wrap justify-content-between">
+            <a href="/"><img src="logo.png" height="60px" /></a>
+            <button class="btn btn-success learn-more add mx-4" id="addNote">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Add a note</span>
+            </button>
+         </div>
+      </header>
+      <div class="container">
+      <div class="border border-primary  mt-5 p-2 ">
+         <div class=" d-flex  align-items-center justify-content-between flex-lg-row flex-column">
+            <div class="border border-primary  w-100 mx-2">
+               <h3 class="text-center mb-4">Add your Notes and Forget </h3>
+               <form
+                  id="addForm"
+                  class="row w-100 d-flex flex-wrap justify-content-between align-items-center m-auto"
+                  >
+                  <textarea
+                     class="form-control w-100"
+                     type="text"
+                     id="item"
+                     placeholder="Hey start from here....!!"
+                     style="height: 300px"
+                     ></textarea>
+                  <div class="d-flex overflow-hidden align-items-start my-2 w-100 justify-content-start px-4 flex-lg-row flex-column">
+                     <input
+                        class="btn btn-warning text-light w-100 m-1 w-50"
+                        id="dueDate"
+                        placeholder="Date"
+                        />
+                     <input
+                        type="submit"
+                        class="btn btn-success m-1 w-50 w-100"
+                        id="submitBtn"
+                        value="Add"
+                        />
+                  </div>
+               </form>
+            </div>
+            <div class="flex-grow-1 border border-primary  w-100 mx-2">
+               <div class="text-center d-flex flex-column ">
+                  <h3 class="text-center " id="heading-tasks">Notes...!!</h3>
+                  <form id="newTaskForm" class=" overflow-auto w-100" style="height: 380px;">
+                     <ul class="list-group overflow-scroll px-2" id="taskList" ></ul>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="main.js"></script>
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+         ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+         ></script>
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   </body>
+=======
 
 <head>
   <!-- Required meta tags -->
@@ -40,9 +156,20 @@
     <div class="heading d-flex flex-wrap justify-content-between">
       <a href="/"><img src="logo.png" height="60px" /></a>
       <button class="btn btn-success learn-more add mx-4" id="addNote">
-        <span class="circle" aria-hidden="true">
+        <!-- <span class="circle" aria-hidden="true">
           <span class="icon arrow"></span>
-        </span>
+        </span> -->
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+
         <span class="button-text">Add a note</span>
       </button>
     </div>
@@ -55,11 +182,11 @@
     <div id="notesContainer">
     </div>
   </main>
-
+  <!-- code for toast  -->
+  <div id="snackbar">Some text some message..</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </body>
-
 </html>
