@@ -35,7 +35,6 @@ function addItem(e) {
 
   document.getElementById("dueDate").value = "";
 }
-
 function createNewTask(taskTitle, createdDate, dueDate) {
   const li = document.createElement("li");
   li.className = `list-group-item card bg-transparent rounded my-2 shadow`;
