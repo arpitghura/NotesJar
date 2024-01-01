@@ -6,13 +6,13 @@
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
-- [Code Style](#code-style)
-- [Reporting Bugs](#reporting-bugs)
-- [Feature Requests](#feature-requests)
-- [Contribution Process](#contribution-process)
-- [Pull Request Guidelines](#pull-request-guidelines)
-- [License](#license)
+- [Getting Started.](#getting-started)
+- [Code Style.](#code-style)
+- [Reporting Bugs.](#reporting-bugs)
+- [Feature Requests.](#feature-requests)
+- [Contribution Process.](#contribution-process)
+- [Pull Request Guidelines.](#pull-request-guidelines)
+- [License.](#license)
 
 ## Getting Started
 
@@ -26,24 +26,24 @@
     git checkout -b feature-name
     ```
 4. Make your changes and commit them with a clear and concise message:
-    how to write a better git commit them with a clear and concise message:
+   How to write a better git commit them with a clear and concise message:
     <a href="https://www.freecodecamp.org/news/how-to-write-better-git-commit-messages/">FreeCodeCamp</a>
     ```bash
     git add .
     git commit -m "Your clear and concise message"
     ```
-5. Push your changes to your fork:
+6. Push your changes to your fork:
     ```bash
     git push origin feature-name
     ```
-6. Open a pull request, referencing relevant issues.
+7. Open a pull request, referencing relevant issues.
 
     The PR should contain about:
 
-    1. the problem or issue tag
-    2. the solution approach you have made
-    3. any big file changes
-    4. any bug/issue that can arise from the changes.
+    1. The problem or issue tag.
+    2. The solution approach you have made.
+    3. Any big file changes.
+    4. Any bug/issue that can arise from the changes.
 
 
 
@@ -81,7 +81,7 @@ Please follow these guidelines when submitting a pull request:
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under the [Project License].
+By contributing to this project, you agree that your contributions will be licensed under the [Project License](https://github.com/arpitghura/NotesJar/blob/main/LICENSE).
 
 ---
 
