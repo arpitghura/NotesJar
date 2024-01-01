@@ -32,11 +32,11 @@
     git add .
     git commit -m "Your clear and concise message"
     ```
-6. Push your changes to your fork:
+5. Push your changes to your fork:
     ```bash
     git push origin feature-name
     ```
-7. Open a pull request, referencing relevant issues.
+6. Open a pull request, referencing relevant issues.
 
     The PR should contain about:
 
