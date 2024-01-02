@@ -13,18 +13,20 @@
 
 </div>
 
-Introducing Notes Jar, your new note-taking companion! Looking for a simple and smart way to take notes online? Check out Notes Jar, the app that captures your thoughts instantly and securely. With Notes Jar, you can access your notes anytime, anywhere. Try it today and see why Notes Jar is the ultimate note-taking companion!
+Introducing Notes Jar, your new note-taking companion! 
+
+Looking for a simple and smart way to take notes online? Check out Notes Jar, the app that captures your thoughts instantly and securely. With Notes Jar, you can access your notes anytime, anywhere. Try it today and see why Notes Jar is the ultimate note-taking companion!
 
 **Key Features:**
-- Capture your thoughts instantly
-- Secure local storage for peace of mind
-- Access your notes anytime, anywhere
-- Ideal for students and professionals
-- Simple and efficient note-taking
+- Capture your thoughts instantly.
+- Secure local storage for peace of mind.
+- Access your notes anytime, anywhere.
+- Ideal for students and professionals.
+- Simple and efficient note-taking.
 
 Explore the power of Notes Jar and elevate your note-taking experience. Try it now and discover the convenience of instant and secure note capture.
 
-The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://notes-jar.arpitg.tech/)
+The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://notes-jar.arpitg.tech/).
 
 ## Project Domain: Web
 ## 🖥 Tech Stack :
@@ -43,13 +45,13 @@ The Web App can be accessible from [https://notes-jar.arpitg.tech/](https://note
 # 👨🏼‍🔧 Installation Guide
 - To get started with NotesJar, follow these simple steps:
 
-- Star and fork Repo
-- Clone the repo into your account
-    - the repo link should look like `https://github.com/<your_username>/NotesJar`
-    - `<your_username>` should be replaced by your GitHub username
-- Congratulations. You have installed the project locally. Now, use the project and understand the code flow.
+- Star and fork Repo.
+- Clone the repo into your account.
+    - The repo link should look like. `https://github.com/<your_username>/NotesJar`
+    - `<your_username>` Should be replaced by your GitHub username.
+- Congratulations!!! You have installed the project locally. Now, use the project and understand the code flow.
 
-## 🦾 How to Use Notes Jar
+## 🦾 How to Use Notes Jar?
 
 Welcome to Notes Jar! Follow these simple steps to make the most out of your note-taking experience:
 
