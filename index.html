@@ -39,7 +39,8 @@
   <header>
     <div class="heading d-flex flex-wrap justify-content-between">
       <a href="/"><img src="logo.png" height="60px" /></a>
-      <button class="btn btn-success learn-more add mx-4" id="addNote">
+      <div class="buttons">
+        <button class="btn btn-success learn-more add mx-4 mt-2" id="addNote">
         <!-- <span class="circle" aria-hidden="true">
           <span class="icon arrow"></span>
         </span> -->
@@ -56,10 +57,16 @@
 
         <span class="button-text">Add a note</span>
       </button>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"  id="toDark"></span>
+      </label>
+      </div>
+      
     </div>
   </header>
 
-  <main id="main h-100">
+  <main id="main">
     <div class="no-notes-available text-center">
       <img src="no-notes.gif" alt="No Notes Found. Create One..." class="no-notes-img"> 
     </div>

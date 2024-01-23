@@ -1,6 +1,8 @@
 const addBtn = document.getElementById("addNote");
+const darkBtn = document.getElementById("toDark")
 const notesContainer = document.getElementById("notesContainer");
 const noNotesImg = document.querySelector(".no-notes-img");
+const mainWindow = document.body;
 
 let getAllNotes=()=>{
     const allNotes = document.querySelectorAll(".note");
@@ -159,3 +161,19 @@ addBtn.onclick=function(){
         }
     },500)
 }
+
+darkBtn.addEventListener("click",()=>{
+    const notes = document.querySelectorAll(".note");
+    const textParts = document.querySelectorAll(".noteContent")
+    const headings = document.querySelectorAll(".inputHeading")
+    mainWindow.classList.toggle("dark-mode");
+    notes.forEach((note)=>{
+        note.classList.toggle("dark-note")
+    })
+    textParts.forEach((text)=>{
+        text.classList.toggle("dark-text")
+    })
+    headings.forEach((heading)=>{
+        heading.classList.toggle("dark-text")
+    })
+})

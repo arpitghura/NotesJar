@@ -4,6 +4,7 @@
 }
 
 body {
+  transition: all 1s;
   background-color: rgb(228, 228, 228);
 }
 
@@ -144,14 +145,28 @@ body {
 }
 
 .note {
+  animation: fadein 3s;
+  transition: all 1.5s;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 250px;
   min-height: max-content;
-  padding: 0;
+  padding: 1em;
   margin: 5px;
   background: white;
-  height: 25vh;
-  width: 22vw;
+  box-shadow: 0px 2px 4px 0px #381a1a;
+  margin-left: 1.75vw;
+  height: 28vh;
+  width: 22vw ;
+}
+
+.dark-note{ 
+  transition: all 1.5s;
+  background: #2b2b45;
+  box-shadow: 0px 1px 1px 0px rgba(230,230,250,0.5);
+}
+
+.dark-text{
+  color: #ecebeb;
 }
 
 .titleBar {
@@ -167,7 +182,7 @@ body {
   padding: 2px 5px;
   width: 100%;
   background-color: transparent;
-  border-bottom: 1px solid black;
+  font-size: larger;
   font-weight: bold;
 }
 
@@ -218,9 +233,74 @@ textarea.noteContent {
   resize: none;
   outline: none;
   width: 97%;
-  height: 75%;
-  margin: 0 5px;
+  height: 70%;
+  margin: 10px 10px;
   padding: 5px 0;
+}
+
+.dark-mode{
+  transition: all 1s;
+  background-color: #1a1a25 ;
+}
+
+.switch {
+  position: relative;
+  left: 0;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1a1a1a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1a1a1a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 
