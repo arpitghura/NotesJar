@@ -119,6 +119,13 @@ const addNewNote = (text = '', title = '') => {
     deleteBtn.addEventListener("click", deleteNote);
     notesContainer.append(newNote);
 
+    if(mainWindow.classList.value=="dark-mode")
+    {
+        newNote.classList.toggle("dark-note");
+        textArea.classList.toggle("dark-text");
+        inputHeading.classList.toggle("dark-text")
+    }
+
 }
 const getData = () => {
     if (localStorage.getItem("data")) {
@@ -166,7 +173,14 @@ darkBtn.addEventListener("click",()=>{
     const notes = document.querySelectorAll(".note");
     const textParts = document.querySelectorAll(".noteContent")
     const headings = document.querySelectorAll(".inputHeading")
+    if(mainWindow.classList.value=="dark-mode"){
+        document.getElementById("image").src = "no-notes.gif"
+    }
+    else{
+        document.getElementById("image").src = "no-notes-dark.gif";
+    }
     mainWindow.classList.toggle("dark-mode");
+    console.log(mainWindow.classList.value)
     notes.forEach((note)=>{
         note.classList.toggle("dark-note")
     })
