@@ -2,6 +2,7 @@ const addBtn = document.getElementById("addNote");
 const darkBtn = document.getElementById("toDark")
 const notesContainer = document.getElementById("notesContainer");
 const noNotesImg = document.querySelector(".no-notes-img");
+const header = document.getElementById("head")
 const mainWindow = document.body;
 
 let getAllNotes=()=>{
@@ -173,14 +174,22 @@ darkBtn.addEventListener("click",()=>{
     const notes = document.querySelectorAll(".note");
     const textParts = document.querySelectorAll(".noteContent")
     const headings = document.querySelectorAll(".inputHeading")
+
+    //it did not work for a single if else that's why I used 2
     if(mainWindow.classList.value=="dark-mode"){
-        document.getElementById("image").src = "no-notes.gif"
+        document.getElementById("image").src = "no-notes.gif";
     }
     else{
         document.getElementById("image").src = "no-notes-dark.gif";
     }
+    if(mainWindow.classList.value=="dark-mode"){
+        document.getElementById("logo").src = "logo.png";
+    }
+    else{
+        document.getElementById("logo").src = "logo-dark.jpg";
+    }
+    header.classList.toggle("heading-dark")
     mainWindow.classList.toggle("dark-mode");
-    console.log(mainWindow.classList.value)
     notes.forEach((note)=>{
         note.classList.toggle("dark-note")
     })
@@ -190,4 +199,5 @@ darkBtn.addEventListener("click",()=>{
     headings.forEach((heading)=>{
         heading.classList.toggle("dark-text")
     })
+   
 })
