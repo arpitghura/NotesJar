@@ -180,7 +180,6 @@ darkBtn.addEventListener("click",()=>{
         document.getElementById("image").src = "no-notes-dark.gif";
     }
     mainWindow.classList.toggle("dark-mode");
-    console.log(mainWindow.classList.value)
     notes.forEach((note)=>{
         note.classList.toggle("dark-note")
     })

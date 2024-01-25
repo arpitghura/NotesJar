@@ -144,8 +144,8 @@ body {
 }
 
 .note {
-  animation: fadein 3s;
-  transition: all 1s;
+  animation: fadein 0.7s;
+  transition: all 0.2s;
   border-radius: 10px;
   min-width: 250px;
   min-height: max-content;
@@ -159,7 +159,7 @@ body {
 }
 
 .dark-note{ 
-  transition: all 1s;
+  transition: all 0.2s;
   background: #2b2b45;
   box-shadow: 0px 1px 1px 0px rgba(230,230,250,0.5);
 }
@@ -239,7 +239,7 @@ textarea.noteContent {
 }
 
 #image{
-  animation: fadein 1.2s;
+  animation: fadein 0.2s;
 }
 
 .dark-mode{
