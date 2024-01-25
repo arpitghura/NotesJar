@@ -144,7 +144,7 @@ body {
 }
 
 .note {
-  animation: fadein 0.7s;
+  animation: fadein 0.3s;
   transition: all 0.2s;
   border-radius: 10px;
   min-width: 250px;
