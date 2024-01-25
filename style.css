@@ -25,17 +25,11 @@ body {
 
 
 .heading {
-  transition: all 0.7s;
   padding: 10px;
   top: 0;
   position: sticky;
   background: rgb(251, 216, 98);
   background: linear-gradient(90deg, rgba(251, 216, 98, 1) 35%, rgba(79, 158, 123, 1) 100%);
-}
-
-.heading-dark{
-  transition: all 0.7s;
-  background: linear-gradient(90deg, #607D8B 35%, #2C268B);
 }
 
 .learn-more {
@@ -151,7 +145,7 @@ body {
 
 .note {
   animation: fadein 3s;
-  transition: all 0.2s;
+  transition: all 1s;
   border-radius: 10px;
   min-width: 250px;
   min-height: max-content;
@@ -165,7 +159,7 @@ body {
 }
 
 .dark-note{ 
-  transition: all 0.2 s;
+  transition: all 1s;
   background: #2b2b45;
   box-shadow: 0px 1px 1px 0px rgba(230,230,250,0.5);
 }
